@@ -1,6 +1,6 @@
 // evaluation of given prefix and postfix expressions using stack.
 // prefix string:- -+7*45+20  | Answer=25
-// postfix string:- 46+2/5*7+ | Answer=32
+
 #include "bits/stdc++.h"
 #include <stack>
 #include <math.h>
@@ -43,6 +43,7 @@ int prefixEvaluation(string s){
     return st.top();
 }
 // function to evaluate postfix
+// postfix string:- 46+2/5*7+ | Answer=32
 int postfixEvaluation(string s){
     stack<int> st;
     // in postfix expression we traverse form the start of the string
